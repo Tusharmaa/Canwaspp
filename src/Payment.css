@@ -1,0 +1,161 @@
+.payment {
+  padding: 2%;
+  background: linear-gradient(
+    rgb(226, 226, 226),
+    rgb(199, 199, 199),
+    rgb(245, 245, 245)
+  );
+}
+
+.payment > p {
+  font-family: "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  display: flex;
+}
+
+.payment > p > strong {
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: coral;
+}
+
+.payment-wrapperName {
+  display: flex;
+  width: 60%;
+  margin-bottom: 28px;
+}
+
+.payment-wrapperNameFirst,
+.payment-wrapperNameLast {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  flex: 0.5;
+}
+
+.payment-wrapperNameFirst > input,
+.payment-wrapperNameLast > input {
+  border: none;
+  border-color: white;
+  box-shadow: 0px 0.5px 8px gray;
+  height: 40px;
+  padding: 0px 1.5%;
+  outline: none;
+  border-radius: 5px;
+}
+
+.payment-wrapperCredentials {
+  display: flex;
+  width: 70%;
+  margin-bottom: 28px;
+}
+
+.payment-wrapperCredentialsEmail,
+.payment-wrapperCredentialsPhone {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.payment-wrapperCredentialsEmail > input,
+.payment-wrapperCredentialsPhone > input {
+  border: none;
+  border-color: white;
+  box-shadow: 0px 0.5px 8px gray;
+  height: 40px;
+  padding: 0px 1.5%;
+  outline: none;
+  border-radius: 5px;
+}
+
+.payment-wrapperCredentialsEmail {
+  flex: 0.3;
+}
+
+.payment-wrapperCredentialsPhone {
+  flex: 0.3;
+}
+
+.payment-wrapperAddress {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.payment-wrapperAddressLine1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.payment-wrapperAddressLine2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-wrapperAddressLine1 > input,
+.payment-wrapperAddressLine2 > input {
+  border: none;
+  border-color: white;
+  box-shadow: 0px 0.5px 8px gray;
+  height: 40px;
+  padding: 0px 1.5%;
+  outline: none;
+  border-radius: 5px;
+}
+
+.payment-wrapperPlace {
+  display: flex;
+  width: 60%;
+  margin-bottom: 55px;
+}
+
+.payment-wrapperPlaceCity {
+  margin-right: 15px;
+  flex: 0.3;
+}
+
+.payment-wrapperPlaceState {
+  margin-right: 15px;
+  flex: 0.4;
+}
+
+.payment-wrapperPlacePincode {
+  flex: 0.3;
+}
+
+.payment-wrapperPlaceCity > input,
+.payment-wrapperPlaceState > input,
+.payment-wrapperPlacePincode > input {
+  width: 100%;
+  border: none;
+  border-color: white;
+  box-shadow: 0px 0.5px 8px gray;
+  height: 40px;
+  padding: 0px 1.5%;
+  outline: none;
+  border-radius: 5px;
+}
+
+.payment > button {
+  height: 40px;
+  width: 110px;
+  border: none;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.payment > button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}

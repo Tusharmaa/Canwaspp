@@ -1,0 +1,41 @@
+.canvas {
+  padding: 2%;
+  /* background-color: rgb(197, 197, 197); */
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.canvas-element > img {
+  height: 45vh;
+  width: 100%;
+  object-fit: contain;
+}
+
+.canvas-element > p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 1%;
+}
+
+.canvas-element > hr {
+  width: 20vw;
+  margin: auto;
+  border: 0.1px solid black;
+  box-shadow: 0 20px 20px -20px #333;
+  margin-top: 15px;
+}
+
+.canvas-element {
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  padding: 2%;
+}
+
+.canvas-element:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,65 @@
+.currency {
+  height: 160px;
+  padding: 3% 2%;
+  text-align: right;
+}
+
+.currency-backbutton {
+  float: left;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.currency-backbutton:hover {
+  color: white;
+}
+
+.currency-value > p {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.currency > button {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  height: 45px;
+  width: 180px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none !important;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  box-shadow: 0px 2px 8px rgb(170, 170, 170);
+  cursor: pointer;
+}
+
+.currency > button:hover {
+  background-color: white;
+  color: black;
+}
+
+.hideButtonArrow {
+  display: none;
+}
+
+.currencyNew {
+  height: 80px;
+  padding: 3% 0.5%;
+  text-align: right;
+}
+
+.currency-valueNew {
+  float: left;
+}
+
+.currency-valueNew > p {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}

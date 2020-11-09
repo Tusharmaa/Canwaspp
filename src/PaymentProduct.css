@@ -1,0 +1,33 @@
+.paymentProduct {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.PaymentProduct-Image {
+  flex: 0.3;
+}
+
+.PaymentProduct-Title {
+  flex: 0.4;
+}
+
+.PaymentProduct-Price {
+  flex: 0.3;
+}
+
+.PaymentProduct-Image > img {
+  height: 100px;
+  object-fit: contain;
+}
+
+.PaymentProduct-Title > p {
+  font-size: 20px;
+  font-weight: 500;
+  margin: auto;
+}
+
+.PaymentProduct-Price > p {
+  font-size: 20px;
+  font-weight: 500;
+}

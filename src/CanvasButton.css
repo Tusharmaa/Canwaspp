@@ -1,0 +1,30 @@
+.canvas-Footer {
+  text-align: center;
+  padding: 1%;
+  height: 15vh;
+  background: linear-gradient(rgb(212, 212, 212), snow);
+}
+
+.canvas-Footer > p {
+  font-size: 17px;
+}
+
+.canvas-FooterButton {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 5px;
+  height: 38px;
+  width: 85px;
+  border-radius: 8px;
+  border: none;
+  outline: none !important;
+  box-shadow: 0px 2px 8px gray;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+
+.canvas-FooterButton:hover {
+  background-color: white;
+  color: black;
+}

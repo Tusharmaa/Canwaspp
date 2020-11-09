@@ -1,0 +1,31 @@
+.paymentWrapper {
+  height: 100vh;
+  background-color: rgb(226, 226, 226);
+}
+
+.paymentWrapper-top {
+  display: flex;
+  font-weight: 600;
+}
+
+.paymentWrapper-button {
+  flex: 0.7;
+}
+
+.paymentWrapper-top > p {
+  margin-left: 30px;
+  margin-top: 50px;
+  flex: 1;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.paymentWrapper-backbutton {
+  margin-left: 30px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.paymentWrapper-backbutton:hover {
+  color: white;
+}

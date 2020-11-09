@@ -1,0 +1,122 @@
+.login {
+  background: url("https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-color: lightgray;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login > a {
+  text-decoration: none;
+}
+
+.login > a > h1 {
+  color: black;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.login > p {
+  text-align: center;
+}
+
+.login-container {
+  width: 300px;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgb(146, 146, 146);
+  padding: 20px;
+}
+
+.login-container > h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.login-container > form > h5 {
+  font-size: 17px;
+}
+
+.login-container > form > input {
+  height: 35px;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1% 2%;
+  box-shadow: 0px 2px 8px lightgray;
+  margin-bottom: 12px;
+}
+
+.login-container > form > button {
+  height: 40px;
+  width: 40%;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0px 2px 8px black;
+  background-color: black;
+  color: white;
+  margin: 0 30%;
+  cursor: pointer;
+}
+.login-container > form > button:hover {
+  background-color: white;
+  color: black;
+}
+
+.login-container > p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.login-conatinerCreateGoogle {
+  display: flex;
+  padding: 1%;
+}
+
+.login-containerRegister {
+  flex: 0.5;
+  height: 55px;
+  width: 40%;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0px 2px 8px black;
+  background-color: black;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.login-containerRegister:hover {
+  background-color: white;
+  color: black;
+}
+
+.login-containerGoogle {
+  flex: 0.5;
+  height: 55px;
+  width: 40%;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0px 2px 8px black;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.login-containerGoogle:hover {
+  background-color: white;
+  color: black;
+}

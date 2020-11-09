@@ -1,0 +1,61 @@
+.mainScreen {
+  background: linear-gradient(#f0f0f0, rgb(182, 181, 181)); /*238, 238, 238 */
+  /* background: url("/images/Gradient2.jpg"); */
+  height: 100vh;
+  justify-content: center;
+  outline: none;
+  color: black;
+  /* background: linear-gradient(white, rgb(255, 243, 245), pink); */
+}
+
+.mainScreen > h1 {
+  padding-top: 1%;
+  font-size: 5.5vh;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(87, 87, 87);
+}
+
+.mainScreen > h1 > strong {
+  /* color: rgb(43, 43, 43); */
+  color: black;
+}
+
+Canvas {
+  outline: none;
+  border: none;
+  cursor: grab;
+}
+
+Canvas:active {
+  cursor: grabbing;
+}
+
+.mainScreen-canvas {
+  margin-top: 50px !important;
+  height: 57vh !important;
+}
+
+.mainScreen-canvasIcon {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: auto;
+}
+
+.mainScreen-canvasText {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  /* padding: 0.25% 1%; */
+}
+
+.mainScreen-canvasDownIcon > i {
+  flex: 1 !important;
+  color: black;
+  outline: none;
+}
+
+.mainScreen-canvasDownIcon > i:hover {
+  color: white;
+}

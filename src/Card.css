@@ -1,0 +1,35 @@
+.card {
+  height: 100vh;
+  background: linear-gradient(
+    rgb(226, 226, 226),
+    rgb(199, 199, 199),
+    rgb(245, 245, 245)
+  );
+}
+
+.card-top {
+  display: flex;
+  font-weight: 600;
+}
+
+.card-button {
+  flex: 0.7;
+}
+
+.card-top > p {
+  margin-left: 30px;
+  margin-top: 50px;
+  flex: 1;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.card-backbutton {
+  margin-left: 30px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.card-backbutton:hover {
+  color: white;
+}

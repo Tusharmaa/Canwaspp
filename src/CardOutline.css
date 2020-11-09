@@ -1,0 +1,107 @@
+.cardOutline {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardOutlineWrapper {
+  margin-top: 5px;
+  padding: 3%;
+  display: flex;
+  background-color: white;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 8px rgb(63, 63, 63);
+}
+
+.cardOutlineWrapper-left > p {
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  /* text-decoration: underline; */
+}
+
+.cardOutlineWrapper-right {
+  margin-left: 10px;
+}
+
+.cardOutlineWrapper-right > h3 {
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.cardOutlineWrapper-right > h5 {
+  letter-spacing: 1px;
+  color: rgb(70, 70, 70);
+}
+
+.cardOutline-Items {
+  margin-top: 5px;
+  padding: 3%;
+  display: flex;
+  background-color: white;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 8px rgb(63, 63, 63);
+}
+
+.cardOutline-ItemsLeft > p {
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  /* text-decoration: underline; */
+}
+
+.cardOutline-ItemsRight {
+  width: 100%;
+  margin-left: 10px;
+  flex: 0.8;
+}
+
+.cardOutline-Card {
+  margin-top: 5px;
+  padding: 3%;
+  display: flex;
+  background-color: white;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 8px rgb(63, 63, 63);
+  flex: 0.8;
+}
+
+.cardOutline-CardLeft > p {
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.cardOutline-CardRight {
+  width: 100%;
+  margin-left: 10px;
+  flex: 0.8;
+}
+
+.cardOutline-CardRightPriceContainer {
+  text-align: center;
+}
+
+.cardOutline-CardRightPriceContainer > button {
+  height: 40px;
+  width: 120px;
+  border: none;
+  box-shadow: 0px 1px 8px gray;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cardOutline-CardRightPriceContainer > button:hover {
+  background-color: white;
+  color: black;
+}
