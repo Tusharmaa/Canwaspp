@@ -14,8 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
-  // const [{}, dispatch] = useStateValue();
-  const [dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
   const [count, setCount] = useState(0);
   const [hideC, setHideC] = useState(false);
   const [hideT, setHideT] = useState(true);
