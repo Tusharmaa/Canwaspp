@@ -4,9 +4,7 @@ import { useStateValue } from "./StateProvider";
 import FlipMove from "react-flip-move";
 
 function CheckoutProduct({ id, name, image, priceIndia, priceNotIndia }) {
-  // const [{}, dispatch] = useStateValue();
-  const [dispatch] = useStateValue();
-
+  const [{}, dispatch] = useStateValue();
   const removeFromCart = () => {
     dispatch({
       type: "REMOVE-FROM-CART",
