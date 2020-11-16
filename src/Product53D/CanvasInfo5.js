@@ -9,8 +9,7 @@ import CarouselFeature from "../CarouselFeature";
 import ThreeDProducts from "./ThreeDProducts5";
 
 function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
-  // const [{}, dispatch] = useStateValue();
-  const [dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
   const [count, setCount] = useState(0);
   const [hideC, setHideC] = useState(false);
   const [hideT, setHideT] = useState(true);
