@@ -20,7 +20,7 @@ function Header({ hideTexts = false }) {
     <div className="navbar" id="myNavbar">
       <Link className="navbar-logo" to="/">
         <div className="navbar-logo1">
-          <h2>Canvasp</h2>
+          <h2>Canwasp</h2>
         </div>
       </Link>
 
