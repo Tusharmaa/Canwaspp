@@ -27,13 +27,11 @@
 .cardOutlineWrapper-right > h3 {
   letter-spacing: 3px;
   font-weight: 500;
-  font-size: 5vh;
 }
 
 .cardOutlineWrapper-right > h5 {
   letter-spacing: 1px;
   color: rgb(70, 70, 70);
-  font-size: 4vh;
 }
 
 .cardOutline-Items {
