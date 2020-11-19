@@ -11,9 +11,7 @@ function Login() {
   const [user, setUser] = useState("");
   const history = useHistory();
 
-  // const [{}, dispatch] = useStateValue();
-  const [dispatch] = useStateValue();
-
+  const [{}, dispatch] = useStateValue();
   useEffect(() => {
     const unSubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
