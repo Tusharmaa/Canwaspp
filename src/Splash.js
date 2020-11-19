@@ -12,10 +12,10 @@ function Splash({ name, image }) {
   return (
     <div className="splash">
       <img src={image} alt="marvel logo" />
-      <div className="splash-name">
+      {/* <div className="splash-name">
         <h2 className="fade-in">WELCOME TO</h2>
         <h1 className="fade-in">{name}</h1>
-      </div>
+      </div> */}
     </div>
   );
 }
