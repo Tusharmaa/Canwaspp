@@ -40,7 +40,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .canvasWrapper-elements {
     flex-direction: column;
   }
