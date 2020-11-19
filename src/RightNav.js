@@ -86,7 +86,7 @@ const Ul = styled.ul`
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
-    color: rgb(105, 105, 105);
+    color: gray;
     letter-spacing: 3px;
     margin: auto 12px;
     font-weight: 600;

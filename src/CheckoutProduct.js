@@ -5,6 +5,7 @@ import FlipMove from "react-flip-move";
 
 function CheckoutProduct({ id, name, image, priceIndia, priceNotIndia }) {
   const [{}, dispatch] = useStateValue();
+
   const removeFromCart = () => {
     dispatch({
       type: "REMOVE-FROM-CART",
@@ -41,7 +42,7 @@ function CheckoutProduct({ id, name, image, priceIndia, priceNotIndia }) {
           <hr />
         </div>
         <div className="checkoutProduct-elementDelete">
-          <button onClick={removeFromCart}>Remove from Cart</button>
+          <button onClick={removeFromCart}>Remove</button>
         </div>
       </div>
     </FlipMove>

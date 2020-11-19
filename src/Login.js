@@ -12,6 +12,7 @@ function Login() {
   const history = useHistory();
 
   const [{}, dispatch] = useStateValue();
+
   useEffect(() => {
     const unSubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
@@ -124,8 +125,8 @@ function Login() {
             Sign In
           </button>
         </form>
-        {/* <br /> */}
-        <p>or</p>
+        <br />
+        <p>OR</p>
         {/* <br /> */}
         <div className="login-conatinerCreateGoogle">
           <button
@@ -133,15 +134,15 @@ function Login() {
             type="submit"
             onClick={register}
           >
-            Register your account
+            Register
           </button>
-          <button
+          {/* <button
             className="login-containerGoogle"
             type="submit"
             onClick={registerWithGoogle}
           >
             Login with Google
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

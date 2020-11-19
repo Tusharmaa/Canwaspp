@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./BuyCanvas.css";
-import Header from "./Header";
+// import Header from "./Header";
 import Product from "./Product";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { Link } from "react-router-dom";
@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 import Footer from "./Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "./Navbar";
 
 function BuyCanvas() {
   let history = useHistory();
@@ -20,7 +21,7 @@ function BuyCanvas() {
 
   return (
     <div className="buyCanvas">
-      <Header hideTexts />
+      <Navbar />
       <div className="buyCanvas-backButton">
         <ArrowBackIosIcon
           onClick={() => history.goBack()}

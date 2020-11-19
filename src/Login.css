@@ -1,5 +1,6 @@
 .login {
-  background: url("https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  /* background: url("https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+  background: url("/images/Gradient2.jpg");
   background-color: lightgray;
   height: 100vh;
   display: flex;
@@ -72,12 +73,16 @@
 
 .login-container > p {
   text-align: center;
-  font-weight: 600;
+  font-weight: 900;
+  color: coral;
 }
 
 .login-conatinerCreateGoogle {
   display: flex;
   padding: 1%;
+}
+.login-conatinerCreateGoogle > button {
+  flex: 1;
 }
 
 .login-containerRegister {
