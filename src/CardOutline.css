@@ -4,7 +4,7 @@
 }
 
 .cardOutlineWrapper {
-  padding: 3%;
+  -webkit-padding-start: 3%;
   display: flex;
   background-color: white;
   margin: 15px;
@@ -35,7 +35,7 @@
 }
 
 .cardOutline-Items {
-  padding: 3%;
+  -webkit-padding-start: 3%;
   display: flex;
   background-color: white;
   margin: 15px;
@@ -59,7 +59,7 @@
 }
 
 .cardOutline-Card {
-  padding: 3%;
+  -webkit-padding-start: 3%;
   display: flex;
   background-color: white;
   margin: 15px;
