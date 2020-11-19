@@ -46,7 +46,7 @@
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
   .canvasWrapper-elementsDuo {
     flex-direction: column;
   }
