@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import "./Contact.css";
 import { db } from "./firebase";
 import Navbar from "./Navbar";
+import { useHistory } from "react-router-dom";
 
 function Contact() {
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const history = useHistory();
 
   const sendToDatabase = (e) => {
     e.preventDefault();
@@ -22,6 +24,7 @@ function Contact() {
     setEmail("");
     setMessage("");
     alert("Your inquiry has been recorded. We will get back to you soon.");
+    history.push("/");
   };
 
   return (
