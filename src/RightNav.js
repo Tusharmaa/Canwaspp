@@ -62,7 +62,7 @@ const Ul = styled.ul`
     color: white;
   }
 
-  @media (max-width: 900px) {
+  @media screen and (max-width: 900px) {
     flex-flow: column nowrap;
     background-color: black;
     border-top-left-radius: 15px;
@@ -71,8 +71,8 @@ const Ul = styled.ul`
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
-    height: 70vh;
-    width: 300px;
+    height: 75vh;
+    width: 50vw;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     a {
@@ -93,8 +93,15 @@ const Ul = styled.ul`
     background-color: transparent;
     border: none;
     margin-left: 18px;
+    margin-bottom: 15px
     border-radius: 10px;
     outline: none;
+  }
+
+  @media screen and (max-width: 650px) {
+    .dropbtn {
+      margin: 25px 17px;
+    }
   }
 
   .dropdown {
