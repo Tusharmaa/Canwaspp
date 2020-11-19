@@ -21,6 +21,7 @@ function Contact() {
     setLName("");
     setEmail("");
     setMessage("");
+    alert("Your inquiry has been recorded. We will get back to you soon.");
   };
 
   return (

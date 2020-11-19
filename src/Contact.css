@@ -1,4 +1,5 @@
 .contact-wrapper {
+  height: 100vh;
   background: linear-gradient(snow, rgb(182, 181, 181));
 }
 
