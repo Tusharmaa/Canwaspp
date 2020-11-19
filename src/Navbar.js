@@ -60,7 +60,7 @@ function Navbar() {
     <Nav>
       <div className="left">
         <Link className="logo" to="/">
-          <h2>Canvasp</h2>
+          <h2>Canwasp</h2>
         </Link>
         {/* <p className="location">{country}</p> */}
       </div>
