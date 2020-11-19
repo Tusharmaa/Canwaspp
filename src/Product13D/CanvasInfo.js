@@ -104,7 +104,6 @@ function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
           image: image,
           name: name,
           priceIndia: priceIndia,
-          priceNotIndia: priceNotIndia,
         },
       });
       setCount(0);
