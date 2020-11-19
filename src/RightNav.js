@@ -100,7 +100,7 @@ const Ul = styled.ul`
 
   @media screen and (max-width: 650px) {
     .dropbtn {
-      margin: 25px 17px;
+      margin: 25px 0px 25px 15px;
     }
   }
 
