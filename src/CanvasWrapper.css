@@ -40,11 +40,11 @@
   text-decoration: none;
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .canvasWrapper-elements {
     flex-direction: column;
   }
-} */
+}
 
 @media screen and (max-width: 950px) {
   .canvasWrapper-elementsDuo {
