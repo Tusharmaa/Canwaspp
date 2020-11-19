@@ -72,12 +72,8 @@ function Payment() {
   return (
     <div className="payment">
       <p>
-        You have <strong> {cart?.length} </strong> items in your cart for which
-        the total amout comes to:{" "}
-        <strong>
-          <p>₹</p>
-          {getCartTotal(cart)}
-        </strong>
+        You have {cart?.length} items in your cart for which the total amout
+        comes to:<p>₹</p> {getCartTotal(cart)}
       </p>
       <div className="payment-detailsTag">
         <p>Required fields*</p>

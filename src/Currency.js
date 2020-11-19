@@ -36,7 +36,6 @@ function Currency({ value, hideCurrency }) {
               Subtotal ({cart?.length} items):{" "}
               <strong>
                 <small>₹</small>
-
                 {value}
               </strong>
             </p>
@@ -50,8 +49,7 @@ function Currency({ value, hideCurrency }) {
         <div className="currencyNew">
           <div className="currency-valueNew">
             <p>
-              Subtotal: <small>₹</small>
-              {value}
+              Subtotal: <small>₹</small> {value}
             </p>
           </div>
           <button

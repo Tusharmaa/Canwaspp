@@ -28,11 +28,13 @@
 .cardOutlineWrapper-right > h3 {
   letter-spacing: 3px;
   font-weight: 500;
+  font-size: 5vh;
 }
 
 .cardOutlineWrapper-right > h5 {
   letter-spacing: 1px;
   color: rgb(70, 70, 70);
+  font-size: 4vh;
 }
 
 .cardOutline-Items {
@@ -104,4 +106,12 @@
 .cardOutline-CardRightPriceContainer > button:hover {
   background-color: white;
   color: black;
+}
+
+@media screen and (max-width: 650px) {
+  .cardOutline-Items,
+  .cardOutlineWrapper,
+  .cardOutline-Card {
+    flex-direction: column;
+  }
 }

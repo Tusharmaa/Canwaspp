@@ -58,7 +58,6 @@ function CardOutlineIndia({
           card: elements.getElement(CardElement),
         },
       })
-
       .then(({ paymentIntent }) => {
         //paymentIntent = payment confirmation
         db.collection("Users")
@@ -78,7 +77,6 @@ function CardOutlineIndia({
         });
         history.replace("/Orders");
       });
-    console.log(payload);
   };
 
   const handleChange = (e) => {
