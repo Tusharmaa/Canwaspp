@@ -23,10 +23,10 @@ function BuyCanvas() {
     <div className="buyCanvas">
       <Navbar />
       <div className="buyCanvas-backButton">
-        <ArrowBackIosIcon
+        {/* <ArrowBackIosIcon
           onClick={() => history.goBack()}
           className="buyCanvas-button"
-        />
+        /> */}
         <p> PRODUCTS</p>
       </div>
       <div className="buyCanvas-products">

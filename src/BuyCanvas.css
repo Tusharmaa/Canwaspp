@@ -47,7 +47,7 @@
 .buyCanvas-productsDuo > a {
   text-decoration: none;
   flex: 0.5;
-  margin-right: 20px;
+  padding: 0.5%;
 }
 
 .buyCanvas-productsDuo > a:hover {
