@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./CanvasInfoFeatured.css";
+import "../CanvasInfoFeatured.css";
 import { useStateValue } from "../StateProvider";
 import Header from "../Header";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
@@ -14,7 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
-  const [{cart}, dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
   const [count, setCount] = useState(0);
   const [hideC, setHideC] = useState(false);
   const [hideT, setHideT] = useState(true);
@@ -104,6 +104,7 @@ function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
           image: image,
           name: name,
           priceIndia: priceIndia,
+          priceNotIndia: priceNotIndia,
         },
       });
       setCount(0);
@@ -232,7 +233,7 @@ function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
       <br />
 
       <div className="canvasInfo-Bottom">
-        <h1>PLEASE REVIEW THE PRODUCT</h1>
+        <h1>WRITE REVIEW</h1>
         <div className="canvasInfo-BottomInput">
           <p>NAME</p>
           <input
