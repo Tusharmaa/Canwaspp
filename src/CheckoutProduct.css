@@ -5,6 +5,7 @@
 .checkoutProduct-element {
   flex: 0.4;
   padding: 1%;
+  background: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 2px 8px grey;
   margin: 10px;
   border-radius: 15px;
