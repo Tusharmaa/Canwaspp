@@ -27,13 +27,17 @@
   display: flex;
   width: 60%;
   margin-bottom: 28px;
+  letter-spacing: 5px;
+}
+
+.payment-wrapperNameFirst {
+  margin-right: 15px;
 }
 
 .payment-wrapperNameFirst,
 .payment-wrapperNameLast {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
   flex: 0.5;
 }
 
@@ -50,15 +54,19 @@
 
 .payment-wrapperCredentials {
   display: flex;
-  width: 70%;
+  width: 60%;
   margin-bottom: 28px;
+  letter-spacing: 5px;
+}
+
+.payment-wrapperCredentialsEmail {
+  margin-right: 20px;
 }
 
 .payment-wrapperCredentialsEmail,
 .payment-wrapperCredentialsPhone {
   display: flex;
   flex-direction: column;
-  margin-right: 15px;
 }
 
 .payment-wrapperCredentialsEmail > input,
@@ -72,12 +80,9 @@
   border-radius: 5px;
 }
 
-.payment-wrapperCredentialsEmail {
-  flex: 0.3;
-}
-
+.payment-wrapperCredentialsEmail,
 .payment-wrapperCredentialsPhone {
-  flex: 0.3;
+  flex: 0.5;
 }
 
 .payment-wrapperAddress {
@@ -85,12 +90,13 @@
   width: 60%;
   flex-direction: column;
   margin-bottom: 28px;
+  letter-spacing: 5px;
 }
 
 .payment-wrapperAddressLine1 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .payment-wrapperAddressLine2 {
@@ -113,6 +119,7 @@
   display: flex;
   width: 60%;
   margin-bottom: 55px;
+  letter-spacing: 5px;
 }
 
 .payment-wrapperPlaceCity {
@@ -168,5 +175,20 @@
   .payment > p > strong {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    letter-spacing: 5px;
+  }
+  .payment-wrapperCredentialsEmail,
+  .payment-wrapperNameFirst,
+  .payment-wrapperPlaceState,
+  .payment-wrapperPlaceCity {
+    margin-right: 0px;
+  }
+
+  .payment-wrapperNameFirst,
+  .payment-wrapperCredentialsEmail,
+  .payment-wrapperPlaceState,
+  .payment-wrapperPlaceCity {
+    margin-bottom: 20px;
   }
 }

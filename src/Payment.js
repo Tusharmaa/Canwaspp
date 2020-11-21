@@ -81,21 +81,21 @@ function Payment() {
       <div className="payment-wrapper">
         <div className="payment-wrapperName">
           <div className="payment-wrapperNameFirst">
-            <h5>First Name*</h5>
+            <h5>FIRST NAME*</h5>
             <input
               required
               type="text"
-              placeholder="Enter your First Name"
+              placeholder=" First Name"
               value={fName}
               onChange={(e) => setFName(e.target.value)}
             />
           </div>
           <div className="payment-wrapperNameLast">
-            <h5>Last Name*</h5>
+            <h5>LAST NAME*</h5>
             <input
               required
               type="text"
-              placeholder="Enter your Last Name"
+              placeholder=" Last Name"
               value={lName}
               onChange={(e) => setLName(e.target.value)}
             />
@@ -103,21 +103,21 @@ function Payment() {
         </div>
         <div className="payment-wrapperCredentials">
           <div className="payment-wrapperCredentialsEmail">
-            <h5>Email*</h5>
+            <h5>EMAIL*</h5>
             <input
               required
               type="email"
-              placeholder="Enter your email"
+              placeholder=" Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="payment-wrapperCredentialsPhone">
-            <h5>Phone Number*</h5>
+            <h5>PHONE NUMBER*</h5>
             <input
               required
               type="text"
-              placeholder="Enter your Number"
+              placeholder="Number"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
             />
@@ -125,7 +125,7 @@ function Payment() {
         </div>
         <div className="payment-wrapperAddress">
           <div className="payment-wrapperAddressLine1">
-            <h5>Apt, suite, etc.*</h5>
+            <h5>APT, SUITE, etc.*</h5>
             <input
               type="text"
               placeholder="Appartment Number"
@@ -135,7 +135,7 @@ function Payment() {
             />
           </div>
           <div className="payment-wrapperAddressLine2">
-            <h5>Street address*</h5>
+            <h5>STREET ADDRESS*</h5>
             <input
               type="text"
               placeholder="Street Address"
@@ -147,7 +147,7 @@ function Payment() {
         </div>
         <div className="payment-wrapperPlace">
           <div className="payment-wrapperPlaceCity">
-            <h5>City*</h5>
+            <h5>CITY*</h5>
             <input
               type="text"
               placeholder="City"
@@ -157,7 +157,7 @@ function Payment() {
             />
           </div>
           <div className="payment-wrapperPlaceState">
-            <h5>State*</h5>
+            <h5>STATE*</h5>
             <input
               type="text"
               placeholder="State"
@@ -167,7 +167,7 @@ function Payment() {
             />
           </div>
           <div className="payment-wrapperPlacePincode">
-            <h5>Pincode*</h5>
+            <h5>PINCODE*</h5>
             <input
               type="text"
               placeholder="Pincode"
