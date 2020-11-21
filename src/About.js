@@ -24,10 +24,10 @@ function About() {
         data-aos="zoom-out-up"
         data-aos-duration="2000"
       >
-        <p>Canvasp is a graphic design company based in India.</p>
+        <p>Canwasp is a graphic design company based in India.</p>
         <br></br>
         <p>
-          We, at Canvasp, provide our users with high quality, crisp and rich in
+          We, at Canwasp, provide our users with high quality, crisp and rich in
           colours custom canvas.
         </p>
       </div>
