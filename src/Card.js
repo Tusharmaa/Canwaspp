@@ -34,7 +34,7 @@ function Card() {
             className="card-backbutton"
           />
         </div>
-        <p>PAYMENT STEP 2 of 2</p>
+        <p>PAYMENT (2 of 2)</p>
       </div>
       <hr />
       {details === undefined ||
@@ -68,3 +68,17 @@ function Card() {
 }
 
 export default Card;
+
+// (
+//   <CardOutlineNotIndia
+//     name={details?.fName}
+//     surname={details?.lName}
+//     email={details?.email}
+//     number={details?.number}
+//     apt={details?.apt}
+//     street={details?.street}
+//     city={details?.city}
+//     state={details?.state}
+//     pincode={details?.pincode}
+//   />
+// )
