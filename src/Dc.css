@@ -55,7 +55,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .dcTrio > a {
-    flex: 1;
+  .dcTrio {
+    flex-direction: column;
   }
 }

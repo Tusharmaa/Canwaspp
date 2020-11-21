@@ -55,7 +55,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .citiesTrio > a {
-    flex: 1;
+  .citiesTrio {
+    flex-direction: column;
   }
 }

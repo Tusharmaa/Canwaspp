@@ -55,7 +55,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .marvelTrio > a {
-    flex: 1;
+  .marvelTrio {
+    flex-direction: column;
   }
 }

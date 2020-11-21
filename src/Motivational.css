@@ -55,7 +55,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .motivationalTrio > a {
-    flex: 1;
+  .motivationalTrio {
+    flex-direction: column;
   }
 }
