@@ -33,7 +33,6 @@ import CanvasInfo6 from "./Product63D/CanvasInfo6";
 import CanvasInfo7 from "./Product73D/CanvasInfo7";
 import CanvasInfo8 from "./Product83D/CanvasInfo8";
 import CanvasInfo9 from "./Product93D/CanvasInfo9";
-import CanvasInfo10 from "./Product103D/CanvasInfo10";
 
 import FProduct1 from "./Featured-Products/FProduct1";
 import FProduct2 from "./Featured-Products/FProduct2";
@@ -48,7 +47,6 @@ import Product6 from "./Products/Product6";
 import Product7 from "./Products/Product7";
 import Product8 from "./Products/Product8";
 import Product9 from "./Products/Product9";
-import Product10 from "./Products/Product10";
 import Navbar from "./Navbar";
 
 const promise = loadStripe(
@@ -176,9 +174,6 @@ function App() {
           <Route path="/CanvasInfo9">
             <CanvasInfo9 />
           </Route>
-          <Route path="/CanvasInfo10">
-            <CanvasInfo10 />
-          </Route>
 
           <Route path="/FProduct1">
             <FProduct1 />
@@ -219,9 +214,6 @@ function App() {
           </Route>
           <Route path="/Product9">
             <Product9 />
-          </Route>
-          <Route path="/Product10">
-            <Product10 />
           </Route>
         </Switch>
       </div>
