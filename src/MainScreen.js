@@ -11,7 +11,7 @@ function MainScreen() {
   return (
     <div className="mainScreen">
       <h1>
-        Welcome to <strong>CANVASP</strong> {name?.username}
+        Welcome to <strong>CANWASP</strong> {name?.username}
       </h1>
       <ThreeD />
       {/* <ThreeDModelMain /> */}
