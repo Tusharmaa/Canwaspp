@@ -14,8 +14,7 @@ function Checkout() {
       {cart?.length === 0 ? (
         <div className="checkout-text">
           <Subtotal />
-          {/* <br />
-          <br /> */}
+          <br />
           <h1>Your cart is empty</h1>
           <p>
             Currently, you have no items in your cart. To buy items, click "Add
