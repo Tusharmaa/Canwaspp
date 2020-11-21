@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Contact.css";
 import { db } from "./firebase";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { useHistory } from "react-router-dom";
 
 function Contact() {
@@ -31,10 +32,16 @@ function Contact() {
     <div id="contact" className="contact-wrapper">
       <Navbar />
       <div className="contact">
-        <h1>CONTACT US</h1>
+        <h1>HOW CAN WE HELP?</h1>
+        <p>
+          If you want to place a custom order or have some doubts regarding our
+          products,
+        </p>
+        <p> feel free to contact us or you can also DM us on our instagram.</p>
+
         <div className="contact-name">
           <div className="contact-nameFirst">
-            <h5>First Name</h5>
+            <h5>FIRST NAME</h5>
             <input
               placeholder="First Name"
               type="text"
@@ -43,7 +50,7 @@ function Contact() {
             />
           </div>
           <div className="contact-nameLast">
-            <h5>Last Name</h5>
+            <h5>LAST NAME</h5>
             <input
               placeholder="Last Name"
               type="text"
@@ -53,27 +60,32 @@ function Contact() {
           </div>
         </div>
         <br />
-        <h5>Email</h5>
-        <input
-          placeholder="Email"
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+        <div className="contact-Email">
+          <h5>EMAIL</h5>
+          <input
+            placeholder="Email"
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
         <br />
-        <h5>Message</h5>
-        <textarea
-          placeholder="Message"
-          rows="5"
-          type="text"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
+        <div className="contact-Message">
+          <h5>MESSAGE</h5>
+          <textarea
+            placeholder="Message"
+            rows="5"
+            type="text"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </div>
         <br />
         <button type="submit" onClick={sendToDatabase}>
           Submit
         </button>
       </div>
+      <Footer />
     </div>
   );
 }
