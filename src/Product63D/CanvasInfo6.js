@@ -185,7 +185,7 @@ function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
         <div className="canvasInfo-right">
           <div className="canvasInfo-rightUpper">
             <h2>{name}</h2>
-            <h5>CANVASP</h5>
+            <h5>CANWASP</h5>
 
             <p>₹{priceIndia}</p>
 
@@ -216,7 +216,7 @@ function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
             <h2>PRODUCT DESCRIPTION</h2>
             <h3>MATERIAL AND CARE</h3>
             <ul>
-              <li>High quality polu-carbon blend canvas</li>
+              <li>High quality poly-carbon blend canvas</li>
               <li>Hand, high density wood fiberboard and a plastic frame</li>
               <li>UV coating is scratch resistant</li>
               <li>Wipe clean with a damp cloth</li>
