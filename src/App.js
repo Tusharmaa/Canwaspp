@@ -115,23 +115,26 @@ function App() {
           <Route path="/Motivational">
             <Splash
               name="MOTIVATIONAL CANVASES"
-              image={"/images/Motivational.jpg"}
+              image={"/images/Gradient1.jpg"}
             />
             <Motivational />
           </Route>
           <Route path="/Cities">
-            <Splash name="CITIES CANVASES" image={"/images/Cities.jpg"} />
+            <Splash name="CITIES CANVASES" image={"/images/Gradient2.jpg"} />
             <Cities />
           </Route>
           <Route path="/Marvel">
             <Splash
               name="MARVEL CINEMATIC UNIVERSE"
-              image={"/images/marvel-logo.jpg"}
+              image={"/images/Gradient3.jpg"}
             />
             <Marvel />
           </Route>
           <Route path="/Dc">
-            <Splash name="DC CINEMATIC UNIVERSE" image={"/images/DC.jpg"} />
+            <Splash
+              name="DC CINEMATIC UNIVERSE"
+              image={"/images/Motivational4.jpg"}
+            />
             <Dc />
           </Route>
           <Route path="/Payment">
