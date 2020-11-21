@@ -1,16 +1,15 @@
 import firebase from "firebase";
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyDc_Z9CDCz4cRtPtXvP4DRY8_jWHuB58AE",
-  authDomain: "cnvs-46f55.firebaseapp.com",
-  databaseURL: "https://cnvs-46f55.firebaseio.com",
-  projectId: "cnvs-46f55",
-  storageBucket: "cnvs-46f55.appspot.com",
-  messagingSenderId: "629286529954",
-  appId: "1:629286529954:web:f95763dc3cb687bcdf60fb",
-  measurementId: "G-010RKMJEBG",
+  apiKey: "AIzaSyD2dV9TKsVftW38X3ZTZE5ntQhIzmQTxpk",
+  authDomain: "cnvs-4180c.firebaseapp.com",
+  databaseURL: "https://cnvs-4180c.firebaseio.com",
+  projectId: "cnvs-4180c",
+  storageBucket: "cnvs-4180c.appspot.com",
+  messagingSenderId: "896443227151",
+  appId: "1:896443227151:web:7437f3fc304827b432177a",
+  measurementId: "G-PRHHD0KWBN",
 });
-console.log(firebaseApp);
 
 const db = firebase.firestore();
 const auth = firebase.auth();
