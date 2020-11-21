@@ -1,20 +1,99 @@
-import React, { useState } from "react";
-import "./CanvasInfoFeatured.css";
+import React, { useState, useEffect } from "react";
+import "../CanvasInfoFeatured.css";
 import { useStateValue } from "../StateProvider";
 import Header from "../Header";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import CarouselFeature from "../CarouselFeature";
-// import ThreeDModel from "./ThreeDModel";
 import ThreeDProducts from "./ThreeDProducts7";
-// import Ar from "./Ar";
+import { db } from "../firebase";
+import firebase from "firebase";
+import Review from "../Review";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
   const [{}, dispatch] = useStateValue();
   const [count, setCount] = useState(0);
   const [hideC, setHideC] = useState(false);
   const [hideT, setHideT] = useState(true);
+  const [userName, setUserName] = useState("");
+  const [review, setReview] = useState("");
+  const [userReview, setUserReview] = useState([]);
+  const [rate, setRate] = useState("");
+
+  const one = (e) => {
+    setRate("1");
+    document.querySelector(".one").style.backgroundColor = "gray";
+    document.querySelector(".two").style.backgroundColor = "black";
+    document.querySelector(".three").style.backgroundColor = "black";
+    document.querySelector(".four").style.backgroundColor = "black";
+    document.querySelector(".five").style.backgroundColor = "black";
+  };
+  const two = (e) => {
+    setRate("2");
+    document.querySelector(".one").style.backgroundColor = "black";
+    document.querySelector(".two").style.backgroundColor = "gray";
+    document.querySelector(".three").style.backgroundColor = "black";
+    document.querySelector(".four").style.backgroundColor = "black";
+    document.querySelector(".five").style.backgroundColor = "black";
+  };
+  const three = () => {
+    setRate("3");
+    document.querySelector(".one").style.backgroundColor = "black";
+    document.querySelector(".two").style.backgroundColor = "black";
+    document.querySelector(".three").style.backgroundColor = "gray";
+    document.querySelector(".four").style.backgroundColor = "black";
+    document.querySelector(".five").style.backgroundColor = "black";
+  };
+  const four = (e) => {
+    setRate("4");
+    document.querySelector(".one").style.backgroundColor = "black";
+    document.querySelector(".two").style.backgroundColor = "black";
+    document.querySelector(".three").style.backgroundColor = "black";
+    document.querySelector(".four").style.backgroundColor = "gray";
+    document.querySelector(".five").style.backgroundColor = "black";
+  };
+  const five = (e) => {
+    setRate("5");
+    document.querySelector(".one").style.backgroundColor = "black";
+    document.querySelector(".two").style.backgroundColor = "black";
+    document.querySelector(".three").style.backgroundColor = "black";
+    document.querySelector(".four").style.backgroundColor = "black";
+    document.querySelector(".five").style.backgroundColor = "gray";
+  };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
+
+  const sendToDatabase = (e) => {
+    e.preventDefault();
+    if (userName === "" || review === "") {
+      alert("Enter your name and review to post your review.");
+    } else {
+      db.collection("Reviews2").add({
+        userName: userName,
+        review: review,
+        rate: rate,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      });
+      setUserName("");
+      setReview("");
+      setRate("");
+    }
+  };
+
+  useEffect(() => {
+    db.collection("Reviews2")
+      .orderBy("timestamp", "asc")
+      .onSnapshot((snapshot) => {
+        setUserReview(snapshot.docs.map((doc) => doc.data()));
+      });
+  }, []);
 
   const addToCart = () => {
     for (let i = 0; i < count; i++) {
@@ -153,6 +232,60 @@ function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
             </ul>
           </div>
         </div>
+      </div>
+      <div className="canvasInfo-Bottom">
+        <h1>WRITE REVIEW</h1>
+        <div className="canvasInfo-BottomInput">
+          <p>NAME</p>
+          <input
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+            type="text"
+          />
+          <p>REVIEW</p>
+          <textarea
+            value={review}
+            onChange={(e) => setReview(e.target.value)}
+            type="text"
+          />
+          <div value={rate} className="LikeDislike">
+            <p>RATE</p>
+            <div onClick={one} value={rate} className="one">
+              <p>1</p>
+            </div>
+            <div onClick={two} value={rate} className="two">
+              <p>2</p>
+            </div>
+            <div onClick={three} value={rate} className="three">
+              <p>3</p>
+            </div>
+            <div onClick={four} value={rate} className="four">
+              <p>4</p>
+            </div>
+            <div onClick={five} value={rate} className="five">
+              <p>5</p>
+            </div>
+          </div>
+          <button onClick={sendToDatabase}>SUBMIT</button>
+        </div>
+      </div>
+      <hr />
+
+      <div
+        data-aos="fade-out"
+        data-aos-duration="3000"
+        className="canvasInfo-Review"
+      >
+        {userReview.map((ur) => (
+          <Review
+            name={ur.userName}
+            review={ur.review}
+            rate={ur.rate}
+            time={new Date(ur.timestamp.seconds * 1000).toLocaleDateString(
+              "en-US"
+            )}
+          />
+        ))}
       </div>
     </div>
   );
