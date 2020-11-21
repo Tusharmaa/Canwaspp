@@ -184,7 +184,7 @@ function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
         <div className="canvasInfo-right">
           <div className="canvasInfo-rightUpper">
             <h2>{name}</h2>
-            <h5>CANVASP</h5>
+            <h5>CANWASP</h5>
 
             <p>₹{priceIndia}</p>
 
