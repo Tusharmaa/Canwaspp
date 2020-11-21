@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./CanvasInfoFeatured.css";
+import "../CanvasInfoFeatured.css";
 import { useStateValue } from "../StateProvider";
 import Header from "../Header";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
@@ -229,7 +229,7 @@ function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
         </div>
       </div>
       <div className="canvasInfo-Bottom">
-        <h1>Please review our product</h1>
+        <h1>WRITE REVIEW</h1>
         <div className="canvasInfo-BottomInput">
           <p>NAME</p>
           <input
