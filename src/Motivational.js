@@ -1,6 +1,6 @@
 import React from "react";
 import "./Motivational.css";
-import Header from "./Header";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Product from "./Product";
 import { Link, useHistory } from "react-router-dom";
@@ -10,7 +10,7 @@ function Motivational() {
   let history = useHistory();
   return (
     <div className="motivational">
-      <Header hideTexts />
+      <Navbar />
       <div className="motivational-backButton">
         <ArrowBackIosIcon
           onClick={() => history.goBack()}

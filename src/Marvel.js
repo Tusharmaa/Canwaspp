@@ -1,6 +1,6 @@
 import React from "react";
 import "./Marvel.css";
-import Header from "./Header";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Product from "./Product";
 import { Link, useHistory } from "react-router-dom";
@@ -11,7 +11,7 @@ function Marvel() {
 
   return (
     <div className="marvel">
-      <Header hideTexts />
+      <Navbar />
       <div className="marvel-backButton">
         <ArrowBackIosIcon
           onClick={() => history.goBack()}

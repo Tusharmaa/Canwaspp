@@ -1,6 +1,6 @@
 import React from "react";
 import "./Cities.css";
-import Header from "./Header";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Product from "./Product";
 import { Link, useHistory } from "react-router-dom";
@@ -10,7 +10,7 @@ function Cities() {
   let history = useHistory();
   return (
     <div className="cities">
-      <Header hideTexts />
+      <Navbar />
       <div className="cities-backButton">
         <ArrowBackIosIcon
           onClick={() => history.goBack()}

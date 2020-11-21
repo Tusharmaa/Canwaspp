@@ -1,6 +1,6 @@
 import React from "react";
 import "./Dc.css";
-import Header from "./Header";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Product from "./Product";
 import { Link, useHistory } from "react-router-dom";
@@ -11,7 +11,7 @@ function Dc() {
 
   return (
     <div className="dc">
-      <Header hideTexts />
+      <Navbar />
       <div className="dc-backButton">
         <ArrowBackIosIcon
           onClick={() => history.goBack()}

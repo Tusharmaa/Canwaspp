@@ -124,17 +124,11 @@ function App() {
             <Cities />
           </Route>
           <Route path="/Marvel">
-            <Splash
-              name="MARVEL CINEMATIC UNIVERSE"
-              image={"/images/Gradient3.jpg"}
-            />
+            <Splash name="MARVEL CANVASES" image={"/images/Gradient3.jpg"} />
             <Marvel />
           </Route>
           <Route path="/Dc">
-            <Splash
-              name="DC CINEMATIC UNIVERSE"
-              image={"/images/Motivational4.jpg"}
-            />
+            <Splash name="DC CANVASES" image={"/images/Gradient4.jpg"} />
             <Dc />
           </Route>
           <Route path="/Payment">
