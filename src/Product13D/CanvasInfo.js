@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../CanvasInfoFeatured.css";
 import { useStateValue } from "../StateProvider";
 import Header from "../Header";
-import Navbar from "../Navbar";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
