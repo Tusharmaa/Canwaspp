@@ -151,7 +151,7 @@ function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
 
   return (
     <div className="canvasInfo">
-      <Header hideTexts />
+      <Header  />
       <div className="canvasInfo-backButton">
         <ArrowBackIosIcon
           onClick={() => history.goBack()}
