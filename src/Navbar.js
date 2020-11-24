@@ -25,6 +25,7 @@ const Nav = styled.nav`
     height: 75px;
     width: 160px;
   }
+
   .logo > img:nth-child(2) {
     display: none;
   }
