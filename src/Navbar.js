@@ -6,8 +6,7 @@ import { Link } from "react-router-dom";
 const Nav = styled.nav`
   position: sticky;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.95);
-  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.97);
   width: 100%;
   height: 75px;
   border: none;
@@ -20,21 +19,29 @@ const Nav = styled.nav`
     display: flex;
   }
 
-  .logo {
-    text-decoration: none;
-    margin: auto 3px;
+  .logo > img {
+    top: 0;
+    left: 0;
+    height: 75px;
+    width: 160px;
   }
-  .logo > h2 {
-    font-size: 32px;
-    font-weight: 500;
-    color: white;
-    margin-right: 15px;
+  .logo > img:nth-child(2) {
+    display: none;
   }
+
   .location {
     color: gray;
     font-size: 15px;
     font-weight: 700;
     margin: auto;
+  }
+  @media screen and (max-width: 650px) {
+    .logo > img:nth-child(1) {
+      display: none;
+    }
+    .logo > img:nth-child(2) {
+      display: block;
+    }
   }
 `;
 
@@ -60,11 +67,11 @@ function Navbar() {
     <Nav>
       <div className="left">
         <Link className="logo" to="/">
-          <h2>Canwasp</h2>
+          <img src={"/images/Logo1.png"} alt="Logo" />
+          <img src={"/images/Logo.png"} alt="Logo" />
         </Link>
         {/* <p className="location">{country}</p> */}
       </div>
-
       <Burger />
     </Nav>
   );

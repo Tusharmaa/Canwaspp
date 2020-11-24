@@ -20,16 +20,16 @@
 .about-containerBlue {
   height: 250px !important;
   width: 38vw !important;
-  background-color: rgb(88, 88, 88) !important;
+  background: url("/images/art3.jpeg");
+  /* background-color: rgb(88, 88, 88) !important; */
   margin-top: 60px !important;
-  opacity: 0.5 !important;
+  opacity: 0.7 !important;
   border-radius: 8px !important;
 }
 
 .about-containerText {
   width: 52vw !important;
-  /* background-color: lightgray !important; */
-  background: url("/images/Gradient2.jpg");
+  background: url("/images/Gradient4.jpg");
   box-shadow: 1px 1px 10px black !important;
   margin-left: 100px !important;
   margin-top: -160px !important;
@@ -57,9 +57,10 @@
 }
 
 .about-containerImageImg {
+  /* background: url("/images/Gradient3.jpg"); */
   height: 60vh !important;
   width: 100% !important;
-  object-fit: contain;
+  /* object-fit: contain; */
   margin-top: -365px !important;
   margin-left: 250px !important;
   border-radius: 20px !important;
@@ -70,12 +71,16 @@
   z-index: -100000 !important;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .about-containerText > p:nth-child(1) {
     font-size: 33px !important;
   }
 
   .about-containerText > p:nth-child(3) {
     font-size: 18px !important;
+  }
+  .about-containerText {
+    margin-left: 20px !important;
+    width: 80% !important;
   }
 }

@@ -96,6 +96,7 @@ const Ul = styled.ul`
     margin-bottom: 15px
     border-radius: 10px;
     outline: none;
+    padding: 2%;
   }
 
   @media screen and (max-width: 650px) {
@@ -107,6 +108,7 @@ const Ul = styled.ul`
   .dropdown {
     position: relative;
     display: inline-block;
+    padding-top: 1.6%;
   }
 
   .dropdown-content {
@@ -117,7 +119,6 @@ const Ul = styled.ul`
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
-    padding: 1%;
   }
 
   .dropdown-content a {

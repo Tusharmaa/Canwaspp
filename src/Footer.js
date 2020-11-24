@@ -74,6 +74,10 @@ function Footer() {
         <div className="footer-wrapperBottom">
           <div className="footer-wrapperBottomDuo">
             <p>Accepted Payments</p>
+            <div className="footer-wrapperBottomDuo-Cards">
+              <img src={"/images/Visa.jpg"} alt="VisaImage" />
+              <img src={"/images/MasterCard.png"} alt="MasterCardImage" />
+            </div>
             <p className="copyright">CANVASP © 2020</p>
           </div>
         </div>

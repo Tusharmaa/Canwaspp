@@ -96,6 +96,19 @@
   font-size: 15px;
 }
 
+.footer-wrapperBottomDuo-Cards {
+  display: flex;
+  width: 10%;
+  margin: auto;
+}
+
+.footer-wrapperBottomDuo-Cards > img {
+  height: 25px;
+  object-fit: contain;
+  margin: 0px auto;
+  border-radius: 3px;
+}
+
 .footer-wrapperBottom {
   margin-bottom: 50px;
 }
@@ -103,5 +116,9 @@
 @media screen and (max-width: 600px) {
   .footer-wrapperTopTrio {
     flex-direction: column;
+  }
+  .footer-wrapperBottomDuo-Cards > img:nth-child(1) {
+    margin-left: -30px;
+    margin-right: 10px;
   }
 }
