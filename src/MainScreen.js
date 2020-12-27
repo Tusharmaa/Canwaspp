@@ -6,12 +6,12 @@ import ThreeD from "./ThreeD";
 import { useStateValue } from "./StateProvider";
 
 function MainScreen() {
-  const [{ name }] = useStateValue();
+  const [{user, name }] = useStateValue();
 
   return (
     <div className="mainScreen">
       <h1>
-        Welcome to <strong>CANVASP</strong> {name?.username}
+        Welcome to <strong>CANWASP</strong> {user ? name?.username : ""}
       </h1>
       <ThreeD />
       {/* <ThreeDModelMain /> */}
