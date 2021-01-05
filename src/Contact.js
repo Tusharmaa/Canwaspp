@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Contact.css";
 import { db } from "./firebase";
 import Navbar from "./Navbar";
@@ -11,6 +11,10 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const history = useHistory();
+  
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
   const sendToDatabase = (e) => {
     e.preventDefault();
