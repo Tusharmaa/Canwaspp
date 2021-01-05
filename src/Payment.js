@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Payment.css";
 import { useStateValue } from "./StateProvider";
 import { useHistory } from "react-router-dom";
@@ -16,10 +16,6 @@ function Payment() {
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
   const [pincode, setPincode] = useState("");
-  
-  useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
 
   // let Token = "722043f5c7eccf";
   // const [country, setCountry] = useState("");
@@ -83,9 +79,10 @@ function Payment() {
         <p>Required fields*</p>
       </div>
       <div className="payment-wrapper">
+        <form onSubmit={addToDatabase} >
         <div className="payment-wrapperName">
           <div className="payment-wrapperNameFirst">
-            <h5>FIRST NAME*</h5>
+            <h5>FIRST NAME<span>*</span></h5>
             <input
               required
               type="text"
@@ -95,7 +92,7 @@ function Payment() {
             />
           </div>
           <div className="payment-wrapperNameLast">
-            <h5>LAST NAME*</h5>
+            <h5>LAST NAME<span>*</span></h5>
             <input
               required
               type="text"
@@ -107,7 +104,7 @@ function Payment() {
         </div>
         <div className="payment-wrapperCredentials">
           <div className="payment-wrapperCredentialsEmail">
-            <h5>EMAIL*</h5>
+            <h5>EMAIL<span>*</span></h5>
             <input
               required
               type="email"
@@ -117,7 +114,7 @@ function Payment() {
             />
           </div>
           <div className="payment-wrapperCredentialsPhone">
-            <h5>PHONE NUMBER*</h5>
+            <h5>PHONE NUMBER<span>*</span></h5>
             <input
               required
               type="text"
@@ -129,7 +126,7 @@ function Payment() {
         </div>
         <div className="payment-wrapperAddress">
           <div className="payment-wrapperAddressLine1">
-            <h5>APT, SUITE, etc.*</h5>
+            <h5>APT, SUITE, etc.<span>*</span></h5>
             <input
               type="text"
               placeholder="Appartment Number"
@@ -139,7 +136,7 @@ function Payment() {
             />
           </div>
           <div className="payment-wrapperAddressLine2">
-            <h5>STREET ADDRESS*</h5>
+            <h5>STREET ADDRESS<span>*</span></h5>
             <input
               type="text"
               placeholder="Street Address"
@@ -151,7 +148,7 @@ function Payment() {
         </div>
         <div className="payment-wrapperPlace">
           <div className="payment-wrapperPlaceCity">
-            <h5>CITY*</h5>
+            <h5>CITY<span>*</span></h5>
             <input
               type="text"
               placeholder="City"
@@ -161,7 +158,7 @@ function Payment() {
             />
           </div>
           <div className="payment-wrapperPlaceState">
-            <h5>STATE*</h5>
+            <h5>STATE<span>*</span></h5>
             <input
               type="text"
               placeholder="State"
@@ -171,7 +168,7 @@ function Payment() {
             />
           </div>
           <div className="payment-wrapperPlacePincode">
-            <h5>PINCODE*</h5>
+            <h5>PINCODE<span>*</span></h5>
             <input
               type="text"
               placeholder="Pincode"
@@ -181,8 +178,9 @@ function Payment() {
             />
           </div>
         </div>
+        </form>
       </div>
-      <button onClick={addToDatabase} type="submit">
+      <button>
         CONTINUE
       </button>
     </div>
