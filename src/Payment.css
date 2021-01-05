@@ -149,7 +149,7 @@
   border-radius: 5px;
 }
 
-.payment > button {
+.payment > form > button {
   height: 40px;
   width: 130px;
   border: none;
@@ -161,9 +161,9 @@
   cursor: pointer;
 }
 
-.payment > button:hover {
+.payment > form > button:hover {
   background-color: white;
-  color: black;
+  color: rgb(15, 3, 3);
   border: 2px solid black;
 }
 
@@ -193,6 +193,14 @@
   }
 }
 
-span {
+.payment-wrapperNameFirst > h5 > span,
+.payment-wrapperNameLast > h5 > span,
+.payment-wrapperCredentialsEmail > h5 > span,
+.payment-wrapperCredentialsPhone > h5 > span,
+.payment-wrapperAddressLine1 > h5 > span,
+.payment-wrapperAddressLine2 > h5 > span,
+.payment-wrapperPlaceCity > h5 > span,
+.payment-wrapperPlacePincode > h5 > span,
+.payment-wrapperPlaceState > h5 > span {
   color: red;
 }

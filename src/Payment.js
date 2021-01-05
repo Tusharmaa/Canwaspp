@@ -77,9 +77,9 @@ function Payment() {
       </p>
       <div className="payment-detailsTag">
         <p>Required fields*</p>
-      </div>
+      </div>   
+           <form onSubmit={addToDatabase} >
       <div className="payment-wrapper">
-        <form onSubmit={addToDatabase} >
         <div className="payment-wrapperName">
           <div className="payment-wrapperNameFirst">
             <h5>FIRST NAME<span>*</span></h5>
@@ -117,7 +117,7 @@ function Payment() {
             <h5>PHONE NUMBER<span>*</span></h5>
             <input
               required
-              type="text"
+              type="tel"
               placeholder="Number"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
@@ -178,11 +178,11 @@ function Payment() {
             />
           </div>
         </div>
-        </form>
       </div>
       <button>
         CONTINUE
       </button>
+      </form>
     </div>
   );
 }
