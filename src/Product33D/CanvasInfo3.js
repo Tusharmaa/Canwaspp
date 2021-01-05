@@ -22,6 +22,10 @@ function CanvasInfo({ id, image, name, priceIndia, priceNotIndia }) {
   const [review, setReview] = useState("");
   const [userReview, setUserReview] = useState([]);
   const [rate, setRate] = useState("");
+  
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
   const one = (e) => {
     setRate("1");
