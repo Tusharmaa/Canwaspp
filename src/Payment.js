@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Payment.css";
 import { useStateValue } from "./StateProvider";
 import { useHistory } from "react-router-dom";
@@ -16,6 +16,10 @@ function Payment() {
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
   const [pincode, setPincode] = useState("");
+  
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
   // let Token = "722043f5c7eccf";
   // const [country, setCountry] = useState("");
