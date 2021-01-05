@@ -12,6 +12,10 @@ import Navbar from "./Navbar";
 
 function BuyCanvas() {
   let history = useHistory();
+  
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
   useEffect(() => {
     AOS.init({
