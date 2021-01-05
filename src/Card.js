@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Card.css";
 import CardOutlineIndia from "./CardOutlineIndia";
 import { useStateValue } from "./StateProvider";
@@ -11,6 +11,10 @@ function Card() {
   // const [country, setCountry] = useState("");
   const [{ details }] = useStateValue();
   const history = useHistory();
+  
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
   // useEffect(() => {
   //   fetch(`https://ipinfo.io?token=${Token}`)
