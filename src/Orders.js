@@ -7,6 +7,10 @@ import Order from "./Order";
 function Orders() {
   const [orders, setOrders] = useState([]);
   const [{ user }] = useStateValue();
+  
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
   useEffect(() => {
     if (user) {
