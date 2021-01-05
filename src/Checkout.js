@@ -8,6 +8,10 @@ import Navbar from "./Navbar";
 
 function Checkout() {
   const [{ cart }] = useStateValue();
+  
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
   return (
     <div className="checkoutWrapper">
