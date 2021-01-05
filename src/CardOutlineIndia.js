@@ -47,11 +47,16 @@ function CardOutlineIndia({
     getClientSecret();
   }, [cart]);
 
-  console.log("client scret key is", clientSecret);
+  console.log("THE SECRET IS >>>", clientSecret);
+  console.log("THE SECRET IS >>>", user);
+  console.log("CARTTTT:", cart);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+
+  const handleSubmit = async (event) => {
+    // do all the fancy stripe stuff...
+    event.preventDefault();
     setProcessing(true);
+
     const payload = await stripe
       .confirmCardPayment(clientSecret, {
         payment_method: {
@@ -59,29 +64,30 @@ function CardOutlineIndia({
         },
       })
       .then(({ paymentIntent }) => {
-        //paymentIntent = payment confirmation
         db.collection("Users")
-          .doc(user?.uid)
-          .collection("Orders")
-          .doc(paymentIntent.id)
-          .set({
-            cart: cart,
-            amount: paymentIntent.amount,
-            created: paymentIntent.created,
-          });
+        .doc(user?.uid)
+        .collection("Orders")
+        .doc(paymentIntent.id)
+        .set({
+          amount: paymentIntent.amount,
+          created: paymentIntent.created
+        })
         setSucceeded(true);
         setError(null);
         setProcessing(false);
+
         dispatch({
-          type: "EMPTY-CART",
+          type: "EMPTY_CART",
         });
-        history.replace("/Orders");
+        history.replace("/orders");
       });
   };
 
-  const handleChange = (e) => {
-    setDisabled(e.empty);
-    setError(e.error ? e.error.message : "");
+  const handleChange = (event) => {
+    // Listen for changes in the CardElement
+    // and display any errors as the customer types their card details
+    setDisabled(event.empty);
+    setError(event.error ? event.error.message : "");
   };
 
   return (
@@ -146,51 +152,3 @@ function CardOutlineIndia({
 }
 
 export default CardOutlineIndia;
-
-// const getCartTotalIndia = (a) =>
-//     a?.reduce((amount, item) => item.priceIndia + amount, 0);
-
-//   const getCartTotalNotIndia = (a) =>
-//     a?.reduce((amount, item) => item.priceIndia + amount, 0);
-
-//   const response1 = () =>
-//     axios({
-//       method: "post",
-//       // Stripe expects the total in a currencies subunits
-//       url: `/payments/create?total=${getCartTotalIndia(cart)}`,
-//     });
-
-//   const response2 = () =>
-//     axios({
-//       method: "post",
-//       // Stripe expects the total in a currencies subunits
-//       url: `/payments/create?total=${getCartTotalNotIndia(cart)}`,
-//     });
-
-// e.preventDefault();
-// setProcessing(true);
-// const payload = await stripe
-//   .confirmCardPayment(clientSecret, {
-//     payment_method: {
-//       card: elements.getElement(CardElement),
-//     },
-//   })
-//   .then(({ paymentIntent }) => {
-//     //paymentIntent = payment confirmation
-//     db.collection("Users")
-//       .doc(user?.uid)
-//       .collection("Orders")
-//       .doc(paymentIntent.id)
-//       .set({
-//         cart: cart,
-//         amount: paymentIntent.amount,
-//         created: paymentIntent.created,
-//       });
-//     setSucceeded(true);
-//     setError(null);
-//     setProcessing(false);
-//     dispatch({
-//       type: "EMPTY-CART",
-//     });
-//     history.replace("/Orders");
-//   });
