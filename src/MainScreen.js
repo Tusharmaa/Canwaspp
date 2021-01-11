@@ -1,20 +1,17 @@
-import React, {useEffect} from "react";
+import React from "react";
 import "./MainScreen.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+// import ThreeDModelMain from "./ThreeDModelMain";
 import ThreeD from "./ThreeD";
 import { useStateValue } from "./StateProvider";
 
 function MainScreen() {
-  const [{user, name }] = useStateValue();
-  
-  useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+  const [{ name, user }] = useStateValue();
 
   return (
     <div className="mainScreen">
       <h1>
-        Welcome to <strong>CANWASP</strong> {user ? name?.username : ""}
+        Welcome to <strong>CANWASP</strong> {user? name?.username: null}
       </h1>
       <ThreeD />
       {/* <ThreeDModelMain /> */}

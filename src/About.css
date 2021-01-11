@@ -43,7 +43,7 @@
 
 .about-containerText > p:nth-child(1) {
   font-size: 43px !important;
-  font-weight: bolder !important;
+  /* font-weight:  !important; */
   color: black !important;
   font-family: "Pacifico" !important;
 }
